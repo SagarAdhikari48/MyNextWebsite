@@ -1,19 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiMail, FiExternalLink } from "react-icons/fi";
+import { FiLinkedin, FiMail, FiExternalLink } from "react-icons/fi";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:from-gray-900 dark:via-gray-900 dark:to-purple-950 dark:bg-gradient-to-br">
-      {/* Animated Background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-3xl opacity-10 dark:opacity-10 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-96 h-96 bg-indigo-300 dark:bg-indigo-600 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-3xl opacity-10 dark:opacity-10 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-300 dark:bg-pink-600 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-3xl opacity-10 dark:opacity-10 animate-blob animation-delay-4000"></div>
-      </div>
-
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-[#f3f2ef] dark:bg-[#000000]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <motion.div
@@ -21,10 +14,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-4">
+            <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-4 font-normal">
               Hi, I'm
             </h2>
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
+            <h1 className="text-5xl md:text-7xl font-semibold mb-4 text-gray-900 dark:text-white">
               Sagar Adhikari
             </h1>
           </motion.div>
@@ -33,7 +26,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-2xl md:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-6 h-20"
+            className="text-2xl md:text-3xl font-normal text-[#0a66c2] dark:text-[#70b5f9] mb-6 h-16"
           >
             <TypeAnimation
               sequence={[
@@ -56,7 +49,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto font-normal"
           >
             7 years of experience crafting exceptional digital experiences with modern web technologies
           </motion.p>
@@ -65,29 +58,29 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex justify-center space-x-4 mb-12"
+            className="flex justify-center space-x-3 mb-12"
           >
             <a
               href="https://linkedin.com/in/sagaradhikari48"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all hover:scale-110"
+              className="p-3 rounded-full linkedin-card hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 transition-all"
             >
-              <FiLinkedin size={24} />
+              <FiLinkedin size={22} />
             </a>
             <a
               href="mailto:sagradhkr48@gmail.com"
-              className="p-3 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all hover:scale-110"
+              className="p-3 rounded-full linkedin-card hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 transition-all"
             >
-              <FiMail size={24} />
+              <FiMail size={22} />
             </a>
             <a
               href="https://www.sagaradhikari.info.np"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-xl text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all hover:scale-110"
+              className="p-3 rounded-full linkedin-card hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 transition-all"
             >
-              <FiExternalLink size={24} />
+              <FiExternalLink size={22} />
             </a>
           </motion.div>
 
@@ -95,17 +88,17 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className="flex flex-col sm:flex-row justify-center gap-3"
           >
             <a
               href="#contact"
-              className="px-8 py-4 gradient-primary text-white rounded-xl font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transition-all"
+              className="px-6 py-3 bg-[#0a66c2] dark:bg-[#70b5f9] text-white rounded-full font-semibold hover:bg-[#004182] dark:hover:bg-[#5a9fd8] transition-all"
             >
               Get In Touch
             </a>
             <a
               href="#projects"
-              className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-xl font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transition-all border border-gray-200 dark:border-gray-700"
+              className="px-6 py-3 linkedin-card text-[#0a66c2] dark:text-[#70b5f9] rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
             >
               View My Work
             </a>

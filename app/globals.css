@@ -2,31 +2,27 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 15%;
-    --primary: 217 91% 60%;
+    --background: 240 10% 98%;
+    --foreground: 0 0% 13%;
+    --primary: 201 100% 35%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 5% 96%;
-    --secondary-foreground: 240 6% 10%;
-    --accent: 217 91% 60%;
-    --accent-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
   }
 
   .dark {
-    --background: 240 10% 8%;
+    --background: 0 0% 7%;
     --foreground: 0 0% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 240 10% 8%;
-    --secondary: 240 4% 16%;
-    --secondary-foreground: 0 0% 98%;
-    --accent: 217 91% 60%;
-    --accent-foreground: 240 10% 8%;
+    --primary: 201 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
   }
 }
 
 @layer base {
   * {
-    border-color: hsl(var(--border));
+    @apply border-gray-200 dark:border-gray-800;
   }
   body {
     background-color: hsl(var(--background));
@@ -36,29 +32,30 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #0a66c2;
+}
+
+.dark .gradient-text {
+  color: #70b5f9;
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #0a66c2;
 }
 
-.gradient-secondary {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+.dark .gradient-primary {
+  background: #70b5f9;
 }
 
-.glass-effect {
-  backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(209, 213, 219, 0.3);
+.linkedin-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
 }
 
-.dark .glass-effect {
-  background-color: rgba(30, 30, 46, 0.7);
-  border-color: rgba(255, 255, 255, 0.1);
+.dark .linkedin-card {
+  background-color: #1b1f23;
+  border-color: #38434f;
 }
 
 /* Animations */
