@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sagar Adhikari - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS featuring smooth animations, dark/light theme, and excellent SEO optimization.
 
-First, run the development server:
+## 🚀 Features
 
+- ⚡ Built with Next.js 14 App Router for optimal performance
+- 🎨 Beautiful UI with Tailwind CSS v4
+- 🌓 Dark/Light theme toggle
+- ✨ Smooth animations with Framer Motion
+- 📱 Fully responsive design
+- 🔍 SEO optimized with metadata and sitemap
+- 🎯 Type-safe with TypeScript
+- 🎭 Glass morphism effects
+- 📧 Contact form with email integration
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Theme:** next-themes
+- **Type Animation:** react-type-animation
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 🏗️ Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+portfolio/
+├── app/
+│   ├── layout.tsx       # Root layout with metadata
+│   ├── page.tsx         # Home page
+│   ├── globals.css      # Global styles
+│   ├── sitemap.ts       # SEO sitemap
+│   └── robots.ts        # SEO robots.txt
+├── components/
+│   ├── Navbar.tsx       # Navigation bar
+│   ├── Hero.tsx         # Hero section
+│   ├── About.tsx        # About section
+│   ├── Experience.tsx   # Work experience
+│   ├── Skills.tsx       # Skills & technologies
+│   ├── Projects.tsx     # Featured projects
+│   ├── Contact.tsx      # Contact form
+│   ├── Footer.tsx       # Footer
+│   └── ThemeProvider.tsx # Theme context
+└── public/              # Static assets
+```
 
-## Deploy on Vercel
+## 🎨 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Update Personal Information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit the content in the following components:
+- `components/Hero.tsx` - Name, title, social links
+- `components/About.tsx` - Bio, location, education
+- `components/Experience.tsx` - Work history
+- `components/Skills.tsx` - Technical skills
+- `components/Projects.tsx` - Portfolio projects
+- `components/Contact.tsx` - Contact information
+
+### Update SEO Metadata
+
+Edit `app/layout.tsx` to update:
+- Page title
+- Description
+- Keywords
+- Open Graph data
+
+### Change Theme Colors
+
+Edit `app/globals.css` to customize:
+- Color variables
+- Gradient colors
+- Glass effect styling
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Deploy with one click
+
+### Other Platforms
+
+The site can be deployed on any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- Render
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Sagar Adhikari**
+- Website: [sagaradhikari.info.np](https://www.sagaradhikari.info.np)
+- LinkedIn: [linkedin.com/in/sagaradhikari48](https://linkedin.com/in/sagaradhikari48)
+- Email: sagradhkr48@gmail.com
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- Framer Motion for smooth animations
